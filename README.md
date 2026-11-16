@@ -12,8 +12,15 @@ An ESP32-powered, two-axis (pan and tilt) laser turret remotely operated via a c
 * 2x Hobby Servos (Pan & Tilt configuration)
 * Laser Diode module
 * Custom 3D-printed stand and servo mounts
-* 5V Power Supply 
+* 5V Power Supply
 
 ## Software Stack
 * **Firmware:** C/C++ for the ESP32 (PlatformIO / Arduino IDE)
 * **Mobile App:** Android Studio for Bluetooth/WiFi communication and sensor data extraction.
+
+## CRUD marking rubric
+- Create: + ADD, then SAVE.
+- Read: Saved presets list.
+- Update: EDIT, then SAVE. Change name and angles directly inside the edit dialog.
+- Delete: DELETE with confirmation.
+- Persistence: Room SQLite `turret_presets.db`, retained across app restarts.
